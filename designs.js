@@ -9,6 +9,7 @@ function makeGrid() {
   let gridHeight = document.getElementById('inputHeight').value;
   let gridWidth = document.getElementById('inputWidth').value;
   let grid = document.getElementById('pixelCanvas');
+  grid.innerHTML ="";
 
   //Create a row append the columns and append row to grid
   for(let row=1; row<=gridHeight; row++){
