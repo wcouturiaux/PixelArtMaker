@@ -8,7 +8,7 @@ function makeGrid() {
   // Your code goes here!
   let gridHeight = document.getElementById('inputHeight').value;
   let gridWidth = document.getElementById('inputWidth').value;
-  let grid = document.getElementById('pixelCanvas'); 
+  let grid = document.getElementById('pixelCanvas');
 
   //Create a row append the columns and append row to grid
   for(let row=1; row<=gridHeight; row++){
@@ -20,3 +20,6 @@ function makeGrid() {
   }
 
 }
+
+const submitBtn = document.getElementById('submit');
+submitBtn.addEventListener('click', function(evt){ evt.preventDefault(); makeGrid();});
